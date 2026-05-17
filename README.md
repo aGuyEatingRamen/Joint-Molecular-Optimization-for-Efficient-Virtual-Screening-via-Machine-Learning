@@ -1,5 +1,7 @@
 # Joint Molecular Optimization for Virtual Screening
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18168822.svg)](https://doi.org/10.5281/zenodo.18168822)
+
 > **Paper:** *Joint Molecular Optimization for Efficient Virtual Screening via Machine Learning* -- Naman Jain
 
 This repository contains the two Jupyter notebooks that implement the complete pipeline described in the paper: molecular docking data generation and multi-objective machine learning training across a four-pipeline ablation framework.
@@ -146,6 +148,15 @@ If you use this code or build on this work, please cite:
   title   = {Joint Molecular Optimization for Efficient Virtual Screening via Machine Learning},
   author  = {Jain, Naman},
   year    = {2025}
+}
+
+@software{jain2025joint_code,
+  author    = {Jain, Naman},
+  title     = {Joint Molecular Optimization for Virtual Screening -- Code},
+  year      = {2025},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.18168822},
+  url       = {https://doi.org/10.5281/zenodo.18168822}
 }
 ```
 
