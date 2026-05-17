@@ -147,13 +147,13 @@ If you use this code or build on this work, please cite:
 @article{jain2025joint,
   title   = {Joint Molecular Optimization for Efficient Virtual Screening via Machine Learning},
   author  = {Jain, Naman},
-  year    = {2025}
+  year    = {2026}
 }
 
 @software{jain2025joint_code,
   author    = {Jain, Naman},
   title     = {Joint Molecular Optimization for Virtual Screening -- Code},
-  year      = {2025},
+  year      = {2026},
   publisher = {Zenodo},
   doi       = {10.5281/zenodo.18168822},
   url       = {https://doi.org/10.5281/zenodo.18168822}
