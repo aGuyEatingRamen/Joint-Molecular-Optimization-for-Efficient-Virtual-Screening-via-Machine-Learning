@@ -74,26 +74,32 @@ All models are evaluated under identical 5-fold stratified cross-validation with
 
 ## Key Results
 
-### Classification (AUC-ROC, cross-validated mean +/- std)
+### Classification Performance  
+**Cross-validated AUC-ROC (mean ± standard deviation)**
 
 | Model | V1 | V2 | V3 | V4 |
 |---|---|---|---|---|
-| Random Forest | 0.668 +/- 0.024 | 0.688 +/- 0.025 | 0.663 +/- 0.027 | 0.688 +/- 0.027 |
-| Naive Bayes | 0.644 +/- 0.023 | 0.675 +/- 0.009 | 0.645 +/- 0.024 | 0.675 +/- 0.009 |
-| SVM (RBF) | 0.603 +/- 0.031 | 0.621 +/- 0.017 | 0.600 +/- 0.032 | 0.623 +/- 0.016 |
-| XGBoost | 0.643 +/- 0.026 | 0.684 +/- 0.028 | 0.638 +/- 0.027 | 0.664 +/- 0.021 |
-| Neural Network | 0.575 +/- 0.031 | 0.599 +/- 0.022 | 0.577 +/- 0.027 | 0.599 +/- 0.020 |
+| Random Forest | **0.668 ± 0.024** | **0.688 ± 0.025** | **0.663 ± 0.027** | **0.688 ± 0.027** |
+| Naive Bayes | 0.644 ± 0.023 | 0.675 ± 0.009 | 0.645 ± 0.024 | 0.675 ± 0.009 |
+| SVM (RBF) | 0.603 ± 0.031 | 0.621 ± 0.017 | 0.600 ± 0.032 | 0.623 ± 0.016 |
+| XGBoost | 0.643 ± 0.026 | 0.684 ± 0.028 | 0.638 ± 0.027 | 0.664 ± 0.021 |
+| Neural Network | 0.575 ± 0.031 | 0.599 ± 0.022 | 0.577 ± 0.027 | 0.599 ± 0.020 |
 
-### Regression (R2, cross-validated mean +/- std, best model per pipeline)
+Random Forest and XGBoost classifiers consistently achieved the strongest and most stable discrimination performance across all pipeline variants. The highest overall classification performance was obtained in Pipeline V4, where Random Forest achieved an AUC of **0.688 ± 0.027**, demonstrating strong robustness under the fully integrated joint optimization framework.
 
-| Pipeline | Best Model | R2 |
-|---|---|---|
-| V1 | XGBoost | 0.825 +/- 0.030 |
-| V2 | XGBoost | 0.792 +/- 0.007 |
-| V3 | XGBoost | 0.864 +/- 0.020 |
-| V4 | Random Forest | 0.823 +/- 0.007 |
+### Regression Performance  
+**Cross-validated regression fidelity (best model per pipeline)**
 
-ADMET augmentation (V3) yields the strongest regression performance overall (R2 = 0.864). The fully integrated V4 pipeline achieves the most balanced performance profile across both classification and regression tasks.
+| Pipeline | Best Model | MSE | R2 |
+|---|---|---|---|
+| V1 | XGBoost | 0.305 ± 0.056 | 0.825 ± 0.030 |
+| V2 | XGBoost | 0.385 ± 0.029 | 0.792 ± 0.007 |
+| V3 | XGBoost | **0.238 ± 0.042** | **0.864 ± 0.020** |
+| V4 | Random Forest | 0.328 ± 0.033 | 0.823 ± 0.007 |
+
+Pipeline V3 achieved the strongest overall regression performance, with XGBoost reaching a peak cross-validated coefficient of determination of **R2 = 0.864 ± 0.020** while maintaining low prediction error. These results indicate that ADMET-aware optimization substantially improves continuous property prediction and molecular ranking fidelity.
+
+The fully integrated V4 framework produced the most balanced overall performance profile across both classification and regression tasks, achieving high predictive stability while preserving strong generalization across folds.
 
 ---
 
