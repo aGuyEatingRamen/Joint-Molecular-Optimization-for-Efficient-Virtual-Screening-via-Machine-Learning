@@ -168,6 +168,8 @@ If you use this code or build on this work, please cite:
 - AutoDock SMINA -- Koes et al.
 - RDKit -- Landrum et al.
 - Deep Docking -- Gentile et al., ACS Central Science 2020
+- The author would like to sincerely thank Elías Rafael Ruiz Morales  for their guidance, mentorship, and valuable feedback throughout the development of this research project and the preparation of the manuscript. Their insights and encouragement were instrumental in shaping the direction of the study and improving the clarity and quality of the work. While they did not contribute directly to the experimental design, data analysis, or authorship of the manuscript, their support and academic guidance are gratefully acknowledged.
+
 
 ---
 
